@@ -8,7 +8,7 @@ class PlanController extends Controller
 {
     public function index()
     {
-        // Logic to list all plans
+        return view('plans.index');
     }
 
     public function create()

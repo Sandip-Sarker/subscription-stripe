@@ -19,12 +19,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     // Plans
-    Route::get('/plan', [PlanController::class, 'index'])->name('paln.index');
-    Route::get('/plan/create', [PlanController::class, 'create'])->name('paln.create');
-    Route::post('/plan/store', [PlanController::class, 'store'])->name('paln.store');
-    Route::get('/plan/edit/{id}', [PlanController::class, 'edit'])->name('paln.edit');
-    Route::put('/plan/update/{id}', [PlanController::class, 'update'])->name('paln.update');
-    Route::delete('/plan/delete/{id}', [PlanController::class, 'destroy'])->name('paln.delete');
+    Route::get('/plan', [PlanController::class, 'index'])->name('plan.index');
+    Route::get('/plan/create', [PlanController::class, 'create'])->name('plan.create');
+    Route::post('/plan/store', [PlanController::class, 'store'])->name('plan.store');
+    Route::get('/plan/edit/{id}', [PlanController::class, 'edit'])->name('plan.edit');
+    Route::put('/plan/update/{id}', [PlanController::class, 'update'])->name('plan.update');
+    Route::delete('/plan/delete/{id}', [PlanController::class, 'destroy'])->name('plan.delete');
 
     // Subscriptions
     Route::get('/subscription', [SubscriptionController::class, 'index'])->name('subscription.index');
